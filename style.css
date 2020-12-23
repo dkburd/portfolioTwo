@@ -107,10 +107,10 @@ also takes align-self and order  */
 /* @media medium only*/
 /* to row view 2 per row*/
 @media screen and (min-width: 641px) and (max-width: 1006px) {
-  /*.group {
+  .group {
     display: inline-flex;
     align-content: flex-start;
-  } */
+  }
 .project {
     min-width: 35%;
     max-width: 50%; 

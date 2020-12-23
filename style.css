@@ -98,33 +98,33 @@ also takes align-self and order  */
   li {
     padding: 10px 20px;
   }
-    .group {
+  .group {
     flex-flow: row nowrap;
   }
+  .item {
+    width: 50%;
+    float: left;
+  }
 }
-
 
 /* @media medium only*/
 /* to row view 2 per row*/
 @media screen and (min-width: 641px) and (max-width: 1006px) {
   .group {
-    display: inline-flex;
-    align-content: flex-start;
+    flex: 1 0 46%;
+    flex-flow: row nowrap;
   }
-.project {
-    min-width: 35%;
-    max-width: 50%; 
-    float:left;
+  .project {
+    float: left;
+  }
 }
-} 
-
-
 
 /* @media large only*/
 /* */
 /* moved this one up to med and large */
-/* @media screen and (min-width: 1007px) {
+@media screen and (min-width: 1007px) {
   .group {
+    flex: 1 0 23%;
     flex-flow: row nowrap;
-  } */
+  }
 }

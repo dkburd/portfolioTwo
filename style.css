@@ -1,0 +1,130 @@
+/* for small screens, medium and large lower */
+
+/* elements */
+/* images will match whatever container width they are placed within */
+img {
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+li a {
+  font-size: 150%;
+  text-decoration: none;
+}
+
+/* class id groups items  */
+.container {
+  width: 580px;
+  margin: auto;
+}
+
+#home {
+  background: white;
+}
+#about {
+  background: blue;
+}
+#projects {
+  background: lime;
+}
+#contact {
+  background: red;
+}
+#nav {
+  background: purple;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card {
+  border: 5px solid white;
+}
+
+/* display: flex acts like a block element -forces new line
+display: inline-flex acts like an inline-block -padding over margin, doesnt force new line */
+.group {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+}
+
+/* group notes */
+/* align-content:space-evenly;
+stretch: (default) lines stretch to take up the remaining space
+space-between: items are evenly distributed with the first line at the start and the last one at the end of the container.
+space-around: items evenly distributed with equal space around each line.
+space-evenly: items are evenly distributed with equal space around them. 
+
+flex-flow: row nowrap; is the same as below and that is default
+ flex-direction:row;
+ flex-wrap:nowrap;  */
+
+.item {
+  flex: 0 1 auto;
+  margin: 20px;
+}
+/* item notes
+flex: takes 3 numbers: grow shrink basis -default below
+flex:0 1 auto;
+also takes align-self and order  */
+
+/*@media*/
+
+/* @media medium and large*/
+@media screen and (min-width: 641px) {
+  #nav {
+    justify-content: center;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    padding: 10px 20px;
+  }
+    .group {
+    flex-flow: row nowrap;
+  }
+}
+
+
+/* @media medium only*/
+/* to row view 2 per row*/
+@media screen and (min-width: 641px) and (max-width: 1006px) {
+  /*.group {
+    display: inline-flex;
+    align-content: flex-start;
+  } */
+.project {
+    min-width: 35%;
+    max-width: 50%; 
+    float:left;
+}
+} 
+
+
+
+/* @media large only*/
+/* */
+/* moved this one up to med and large */
+/* @media screen and (min-width: 1007px) {
+  .group {
+    flex-flow: row nowrap;
+  } */
+}

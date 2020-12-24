@@ -1,4 +1,64 @@
-/* for small screens, medium and large lower */
+/* navbar small screen*/
+#nav {
+  overflow: hidden;
+  background-color: purple;
+  position: relative;
+}
+/* display links with hamburger or by resizing larger */
+#nav #navLinks {
+  display: none;
+}
+
+#nav a {
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+#nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#nav a:hover {
+  background-color: #ddd;
+  color: purple;
+}
+
+.homeLink {
+  background-color: black;
+  color: white;
+}
+
+/* navbar @media medium and large*/
+@media screen and (min-width: 641px) {
+  #nav {
+    /* goal need links to be visiable after resize without refresh */
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    /* justify-content: end; */
+  }
+  #nav #homeLink {
+    /* goal:move links to far right, leave homeLink left */
+    display: flex;
+  }
+
+  #nav #navLinks {
+    /* fix issues with resize after hamburger button*/
+    display: flex;
+    /* must be something else not working  */
+    /* align-items: flex-end; */
+  }
+
+  /* hide hamburger */
+  #nav a.icon {
+    display: none;
+  }
+}
 
 /* elements */
 /* images will match whatever container width they are placed within */
@@ -11,21 +71,8 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-ul {
-  display: flex;
-  list-style: none;
-}
 
-li {
-  padding: 10px;
-}
-
-li a {
-  font-size: 150%;
-  text-decoration: none;
-}
-
-/* class id groups items  */
+/* main class id groups items  */
 .container {
   width: 580px;
   margin: auto;
@@ -43,12 +90,6 @@ li a {
 #contact {
   background: red;
 }
-#nav {
-  background: purple;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
 
 .card {
   border: 5px solid white;
@@ -56,6 +97,9 @@ li a {
 
 /* display: flex acts like a block element -forces new line
 display: inline-flex acts like an inline-block -padding over margin, doesnt force new line */
+
+/* FOR PROJECTS SECTION */
+
 .group {
   display: flex;
   flex-flow: column nowrap;

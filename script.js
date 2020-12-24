@@ -8,8 +8,11 @@ const color = document.body.style.backgroundColor=colors[randomColor];
 // const textColor = document.getElementsByClassName("box").style.color=("white");
 // const color = colors[randomColor];
 
-//using same concept to inseert a random accoutning pun into the paragraph tag under my name
-const puns= ["Accountants can be quite hard to read. I find it very difficult to judge their accrual intentions", "Every single person in the accounting department counts", "Skunks don't have to pay taxes because they only have one scent", "When an accountant boards the train they are always careful to mind the GAAP"]
-const randomPun = Math.floor(Math.random() * puns.length);
-const pun=document.getElementById('pun').innerHTML = puns[randomPun];
-
+function showLinks() {
+  var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

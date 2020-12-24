@@ -20,24 +20,40 @@
 
 <!-- set the home page link to the public root ("/") hides the /index.html filename from displaying in the browser -->
 <nav>
+
+<!-- using ul instead of div -->
+<!-- <div id="nav"> 
+    <a href="/" class="homeLink" aria-hidden="true">DB</a>
+    <ul id="navLinks">
+        <li><a href="#about">About</a></li>
+    <li> <a href="#projects">Projects</a></li>
+    <li> <a href="#contact">Contact</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+</div> -->
+    <!-- using div instead of ul -->
 <div id="nav">
     <a href="/" class="homeLink" aria-hidden="true">DB</a>
     <div id="navLinks">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-    </div>
+</div>
     <a href="javascript:void(0);" class="icon" onclick="showLinks()">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
 </div>
+
+
 </nav>
 
 </header>
     <main>
         <section id="home">
        <div class="container">
-<h2>Meet Dana</h2>
+<h2>intro</h2>
 <p>elevator pitch</p>
        </div> 
        <ul>
@@ -65,24 +81,27 @@
     <p>portfolio section, I don't have any now so I will create three empty slots</p>
 <section class="portfolio">
     <div class="group">
-        <div class="item project">
+        <div class="card item">
             <img src="" alt="">
             <h3>PROJECT ONE</h3>
-            <p class="card">Pestilentia, pitiutary gland shaun ofthe optic gland dead scythe brains animated corpses spinal cord ipsa screams medulla.</p>
+            <a class="button" href="NOWHERE YET">Get Code</a>
+            <p>Pestilentia, pitiutary gland shaun ofthe optic gland dead scythe brains animated corpses spinal cord ipsa screams medulla.</p>
         </div>
-        <div class="item project">
+        <div class="card item">
             <img src="" alt="">
             <h3>PROJECT 2</h3>
-            <p class="card">Hi brains mindless
+            <a class="button" href="NOWHERE YET">Get Code</a>
+            <p>Hi brains mindless
             mortuis limbic cortex soulless creaturas optic nerve, imo evil braaiinns stalking monstra hypothalamus adventus resi
             hippocampus dentevil vultus brain comedat cerebella pitiutary gland viventium. Qui optic gland animated corpse, brains
             cricket bat substantia nigra max brucks spinal cord.
             </p>
         </div>
-        <div class="item project">
+        <div class="card item">
             <img src="" alt="">
             <h3>PROJECT 3</h3>
-            <p class="card">Medulla lucio brains fulci tremor locus coeruleus est dark vivos lateral geniculate nucleus magna. Breins expansis
+            <a class="button" href="NOWHERE YET">Get Code</a>
+            <p>Medulla lucio brains fulci tremor locus coeruleus est dark vivos lateral geniculate nucleus magna. Breins expansis
             creepy superior colliculus arm yof cerebellum darkness ulnis brains witchcraft missing cerveau carnem armis cerebro
             Kirkman Moore braaiiiinnns.
             </p>

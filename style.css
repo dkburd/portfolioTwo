@@ -1,3 +1,11 @@
+/* li {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+} */
+
 /* navbar small screen*/
 #nav {
   overflow: hidden;
@@ -50,6 +58,8 @@
   #nav #navLinks {
     /* fix issues with resize after hamburger button*/
     display: flex;
+    margin: auto;
+    text-align: center;
     /* must be something else not working  */
     /* align-items: flex-end; */
   }
@@ -77,6 +87,12 @@ h1 {
   width: 580px;
   margin: auto;
 }
+.button {
+  width: 20px;
+  height: auto;
+  background-color: black;
+  color: white;
+}
 
 #home {
   background: white;
@@ -84,7 +100,7 @@ h1 {
 #about {
   background: blue;
 }
-#projects {
+.item {
   background: lime;
 }
 #contact {
@@ -131,7 +147,7 @@ also takes align-self and order  */
 
 /* @media medium and large*/
 @media screen and (min-width: 641px) {
-  #nav {
+  #nav #navLinks {
     justify-content: center;
   }
   h1 {
@@ -148,6 +164,8 @@ also takes align-self and order  */
   .item {
     width: 50%;
     float: left;
+    flex-grow: 1;
+    flex-basis: 100%;
   }
 }
 
@@ -157,9 +175,6 @@ also takes align-self and order  */
   .group {
     flex: 1 0 46%;
     flex-flow: row nowrap;
-  }
-  .project {
-    float: left;
   }
 }
 

@@ -14,11 +14,10 @@
     <!-- basic outline -->
     <!-- top bottom class to set text color and center for both pieces -->
 <header>  
-    <div class="container"> 
+    <div class="card"> 
         <h1>Dana Burd Software Developer</h1>
     </div>
 
-<!-- set the home page link to the public root ("/") hides the /index.html filename from displaying in the browser -->
 <nav>
 
 <!-- using ul instead of div -->
@@ -34,8 +33,8 @@
     </a>
 </div> -->
     <!-- using div instead of ul -->
-<div id="nav">
-    <a href="/" class="homeLink" aria-hidden="true">DB</a>
+<div id="nav" class="nav">
+    <a href="#home" class="homeLink" aria-hidden="true">DB</a>
     <div id="navLinks">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -45,110 +44,137 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
 </div>
-
-
 </nav>
-
 </header>
     <main>
-        <section id="home">
-       <div class="container">
-<h2>intro</h2>
-<p>elevator pitch</p>
-       </div> 
-       <ul>
-           <li>must include who you are, where you ive,what you do, what makes u special</li>
-       </ul>
-    </div>
+        <section id="home" class="card">
+<h2>Hello there!</h2>
+<p>I'm Dana Burd, an accountant and web development student.</p>
+<p> what makes u special</p>
         </section>  
 <section id="about">
-<div class="">
-    <h2>About Dana</h2>
-    <p>why people should hire me</p>
-    <ul class="card">
-        <li>programming languages</li>
-        <li>education</li>
+<div class="card item">
+    <h2>About Me</h2>
+    <p>About three years ago my sister indroduced me to Aikido, a modern Japanese martial art known as <em>the way of harmonious spirit</em> and <em>the art of peace</em>. I immediately fell in love with the art and have been practicing ever since and have applied some of  the key philosophies to my work.</p>
+    <p>Aikido teaches us to be life long learners, the imporance of begining an endevour with clear intention,how to work with our partners in a way that is mutually beneficial and to embrace that there is always something new to take from an expierence, even if it is an action we have done thousands of time.</p>
+
+    <p>Like Aikido, the world of web development offers the oppertunity to study endlessly and find new solutions to problems through teamwork and expierementation. </p>
+    </div>
+</section>
+
+<section class="group">
+<div class="card item">
+    <h3>Education:</h3>
+    <ul>
+        <li>UC Santa Cruz, BA Film & Digital Media, 2010</li>
+        <li>Bloc, Web Developer Bootcamp, <em>in progress</em></li>
     </ul>
 </div>
-<div class="">
-<h2>Dana's Services</h2>
-<p>REFFER BACK TO INSTRUCTIONS</p>
+<div class="card item">
+    <h3>Studying at Bloc:</h3>
+    <ul>
+        <li>HTML, CSS and JavaScript fundamentals</li>
+        <li>Client-side development with React</li>
+        <li>Server-side programming with Node & Postgres</li>
+        <li>Authentication with JWT</li>
+        <li>Data structures and algorithms</li>
+    </ul>
 </div>
+<div class="card item">
+<h3>Services</h3>
+    <ul>
+        <li>Collaboration</li>
+        <li>Front-end</li>
+        <li>Responsive Design</li>
+    </ul>
+
+</div> 
 </section>
+
 
 <section id="projects">
     <h2>Dana's Work</h2>
     <p>portfolio section, I don't have any now so I will create three empty slots</p>
-<section class="portfolio">
-    <div class="group">
-        <div class="card item">
+
+ <div class="projects">
+        <div class="card project item">
             <img src="" alt="">
             <h3>PROJECT ONE</h3>
-            <a class="button" href="NOWHERE YET">Get Code</a>
-            <p>Pestilentia, pitiutary gland shaun ofthe optic gland dead scythe brains animated corpses spinal cord ipsa screams medulla.</p>
+            <a class="button" href="NOWHERE YET">Get Code</a> 
+            <a class="button" href="NOWHERE YET">Live App</a>
+            <p>When proejcts are added this will be a brief description of project one.</p>
+            <p>When proejcts are added this will be a brief description of project one.</p>
         </div>
-        <div class="card item">
+        <div class="card project item">
             <img src="" alt="">
-            <h3>PROJECT 2</h3>
+            <h3>PROJECT TWO</h3>
             <a class="button" href="NOWHERE YET">Get Code</a>
-            <p>Hi brains mindless
-            mortuis limbic cortex soulless creaturas optic nerve, imo evil braaiinns stalking monstra hypothalamus adventus resi
-            hippocampus dentevil vultus brain comedat cerebella pitiutary gland viventium. Qui optic gland animated corpse, brains
-            cricket bat substantia nigra max brucks spinal cord.
-            </p>
+            <a class="button" href="NOWHERE YET">Live App</a>
+            <p>When proejcts are added this will be a brief description of project two.</p>
+            <p>When proejcts are added this will be a brief description of project two.</p>
         </div>
-        <div class="card item">
+        <div class="card project item">
             <img src="" alt="">
-            <h3>PROJECT 3</h3>
+            <h3>PROJECT THREE</h3>
             <a class="button" href="NOWHERE YET">Get Code</a>
-            <p>Medulla lucio brains fulci tremor locus coeruleus est dark vivos lateral geniculate nucleus magna. Breins expansis
-            creepy superior colliculus arm yof cerebellum darkness ulnis brains witchcraft missing cerveau carnem armis cerebro
-            Kirkman Moore braaiiiinnns.
-            </p>
+            <a class="button" href="NOWHERE YET">Live App</a>
+            <p>When proejcts are added this will be a brief description of project three.</p>
+            <p>When proejcts are added this will be a brief description of project three.</p>
         </div>
     </div>
 </section>
-</div>
 
-<section id="contact">
-        <h2>Contact Dana</h2>
-        <p>REFFER BACK TO INSTRUCTIONS</p>
-        <p>MAP REQUIRED</p>
-        <p>SOCIAL MEDIA LINKS</p>
-        <P>ENCOURAGING MESSAGE</P>
-    <!-- <div class="notes">
-<p>here are my form notes</p>
-<p>
-Within each form two attributes action and method
-action: Holds the URL to the server-side file the data will be sent to.
-method: post or get.
-post: storing or updating data, ordering a product, sending an email
-get: just getting (retrieving) data to display in the form.
 
-</p>
-<p>the inut has 3 attributes</p>
-<form>
-    <label for="user-name">First name:</label>
-    <input id="user-name" type="text" name="name" autofocus="on">
-</form>
 
-<p>
-    id: This is what provides a unique name to the element so the label knows how to connect with it.
-    type: This type is set to 'text', which creates a single line of input text.
-    name: This is the variable that the data to the input field goes into that is later used.
-</p>
-<p>autofocus="on" should be used once per page and should direct user to the first name input hopefully</p> 
+<!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script> -->
+        
 
-<form>
-    <label for="location">Zipcode:</label>
-    <input id="location" type="text" name="zipcode"  maxlength="5" required />
-</form>
-<p>maxlength="5" required limits input to 5 characters and the field is required</p>
+<section> 
+    
+    <div class="group">
 
-    </div> -->
+        <div class="item card">
+            <form action="#" method="POST">
+                    <h2>Send a Message</h2>
+                <label for="user-name">Name:</label>
+                <input id="user-name" type="text" name="name" required>
+
+                <label for="user-email">Email:</label>
+                <input id="user-email" type="text" name="email" required>
+
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="item socials card">
+
+            <h2>View my projects and resume online</h2>
+
+            <a class="mediaIcon" href="https://github.com/dkburd" target="_blank">
+                <img src="images/githubicon.png" alt="Github"></a>
+            <a class="mediaIcon" href="https://www.linkedin.com/in/danaburd" target="_blank">
+                <img src="images/linkedinicon.png" alt="Linkedin"></a>
+          <a class="icon" href="mailto:burd.dana@gmail.com">
+                           <img src="images/emailicon.png" alt="Gmail"></a> 
+        </div>
+
+    </div>
+    </div>
+</section>
+<section>
+
+
+    <div class="item map card">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
+            width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
 </section>
 </main>
 <footer>
+    <p>burd.dana@gmail.com </p>
  </footer>
 <script src="./script.js"></script>
 <script src="https://use.fontawesome.com/145d6adf7c.js"></script>

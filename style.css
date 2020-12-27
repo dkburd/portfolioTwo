@@ -1,16 +1,113 @@
-/* li {
-  text-decoration: none;
+/* all sizes  */
+.item {
+  flex: 1;
+  margin: 10px;
 }
 
-ul {
-  list-style-type: none;
+#home {
+  background: white;
+}
+#about {
+  background: blue;
+}
+.project {
+  background: lime;
+}
+#contact {
+  background: red;
+}
+
+.card {
+  border: 5px solid white;
+  padding: 10px;
+}
+.button {
+  /* to do center text */
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10%;
+}
+a > img {
+  width: 50px;
+  height: 40px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  margin-top: 10px;
+}
+
+/* NEW NEW NEW */
+
+/* projects section small screen*/
+
+.project {
+  flex: 0 1 auto;
+  /* margin: 20px; */
+}
+
+.button {
+  padding-right: 20px;
+}
+
+/* contact and form small screen */
+form label {
+  display: block;
+}
+
+/* .block {
+  display: block;
 } */
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+.socials {
+  display: block;
+  background-color: pink;
+  margin: 10px;
+}
+
+/* projects section medium large screen */
+/* @media medium and large*/
+@media screen and (min-width: 641px) {
+  .project {
+    float: left;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column wrap;
+  }
+}
 
 /* navbar small screen*/
-#nav {
+/* use the js to remove nav class and add sticky to allow stick to top - needs fixed position */
+/* TODO:: 
+FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON RESIZE */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: purple;
+}
+
+.nav {
   overflow: hidden;
   background-color: purple;
   position: relative;
+  display: flex;
+  flex-flow: column nowrap;
 }
 /* display links with hamburger or by resizing larger */
 #nav #navLinks {
@@ -29,6 +126,8 @@ ul {
   position: absolute;
   right: 0;
   top: 0;
+  width: 20px;
+  height: 20px;
 }
 
 #nav a:hover {
@@ -39,29 +138,36 @@ ul {
 .homeLink {
   background-color: black;
   color: white;
+  width: 20px;
+  height: 20px;
 }
 
 /* navbar @media medium and large*/
 @media screen and (min-width: 641px) {
-  #nav {
+  .nav {
     /* goal need links to be visiable after resize without refresh */
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    /* justify-content: end; */
   }
-  #nav #homeLink {
-    /* goal:move links to far right, leave homeLink left */
+  .sticky {
+    /* goal need links to be visiable after resize without refresh */
     display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+  }
+
+  #nav #homeLink {
+    display: flex;
+    width: 20px;
+    height: 20px;
   }
 
   #nav #navLinks {
-    /* fix issues with resize after hamburger button*/
     display: flex;
     margin: auto;
     text-align: center;
-    /* must be something else not working  */
-    /* align-items: flex-end; */
+    justify-content: center;
   }
 
   /* hide hamburger */
@@ -70,120 +176,20 @@ ul {
   }
 }
 
-/* elements */
-/* images will match whatever container width they are placed within */
-img {
-  width: 100%;
-}
-
-h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* main class id groups items  */
-.container {
-  width: 580px;
-  margin: auto;
-}
-.button {
-  width: 20px;
-  height: auto;
-  background-color: black;
-  color: white;
-}
-
-#home {
-  background: white;
-}
-#about {
-  background: blue;
-}
-.item {
-  background: lime;
-}
-#contact {
-  background: red;
-}
-
-.card {
-  border: 5px solid white;
-}
-
-/* display: flex acts like a block element -forces new line
-display: inline-flex acts like an inline-block -padding over margin, doesnt force new line */
-
-/* FOR PROJECTS SECTION */
-
-.group {
-  display: flex;
-  flex-flow: column nowrap;
-  margin-bottom: 100px;
-  justify-content: space-evenly;
-}
-
-/* group notes */
-/* align-content:space-evenly;
-stretch: (default) lines stretch to take up the remaining space
-space-between: items are evenly distributed with the first line at the start and the last one at the end of the container.
-space-around: items evenly distributed with equal space around each line.
-space-evenly: items are evenly distributed with equal space around them. 
-
-flex-flow: row nowrap; is the same as below and that is default
- flex-direction:row;
- flex-wrap:nowrap;  */
-
-.item {
-  flex: 0 1 auto;
-  margin: 20px;
-}
-/* item notes
-flex: takes 3 numbers: grow shrink basis -default below
-flex:0 1 auto;
-also takes align-self and order  */
-
-/*@media*/
-
-/* @media medium and large*/
-@media screen and (min-width: 641px) {
-  #nav #navLinks {
-    justify-content: center;
-  }
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  li {
-    padding: 10px 20px;
-  }
-  .group {
-    flex-flow: row nowrap;
-  }
-  .item {
-    width: 50%;
-    float: left;
-    flex-grow: 1;
-    flex-basis: 100%;
-  }
-}
-
-/* @media medium only*/
-/* to row view 2 per row*/
+/* medium only */
+/* projects section */
 @media screen and (min-width: 641px) and (max-width: 1006px) {
-  .group {
-    flex: 1 0 46%;
-    flex-flow: row nowrap;
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 
 /* @media large only*/
-/* */
-/* moved this one up to med and large */
+/* projects section */
 @media screen and (min-width: 1007px) {
-  .group {
-    flex: 1 0 23%;
-    flex-flow: row nowrap;
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }

@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://use.fontawesome.com/145d6adf7c.js"></script>
 </head>
 
 <body>
     <!-- basic outline -->
     <!-- top bottom class to set text color and center for both pieces -->
 <header>  
-    <div class="card"> 
+    <div class=""> 
         <h1>Dana Burd Software Developer</h1>
     </div>
 
@@ -47,7 +48,7 @@
 </nav>
 </header>
     <main>
-        <section id="home" class="card">
+        <section id="home">
 <h2>Hello there!</h2>
 <p>I'm Dana Burd, an accountant and web development student.</p>
 <p> what makes u special</p>
@@ -64,14 +65,14 @@
 
 <section class="group">
 <div class="card item">
-    <h3>Education:</h3>
+    <h3>Education</h3>
     <ul>
         <li>UC Santa Cruz, BA Film & Digital Media, 2010</li>
         <li>Bloc, Web Developer Bootcamp, <em>in progress</em></li>
     </ul>
 </div>
 <div class="card item">
-    <h3>Studying at Bloc:</h3>
+    <h3>Studying at Bloc</h3>
     <ul>
         <li>HTML, CSS and JavaScript fundamentals</li>
         <li>Client-side development with React</li>
@@ -93,30 +94,32 @@
 
 
 <section id="projects">
-    <h2>Dana's Work</h2>
+    <div class="card item"><h2>Dana's Work</h2>
     <p>portfolio section, I don't have any now so I will create three empty slots</p>
+    <p>each will have an image, link to site and github code and a short description.</p>
+    </div>
 
  <div class="projects">
         <div class="card project item">
-            <img src="" alt="">
+            <img class="small" src="https://source.unsplash.com/random" alt="random image" title="random image from Unplash">
             <h3>PROJECT ONE</h3>
-            <a class="button" href="NOWHERE YET">Get Code</a> 
+            <a class="button" href=https://github.com/dkburd?tab=repositories target="blank">Get Code</a> 
             <a class="button" href="NOWHERE YET">Live App</a>
             <p>When proejcts are added this will be a brief description of project one.</p>
             <p>When proejcts are added this will be a brief description of project one.</p>
         </div>
         <div class="card project item">
-            <img src="" alt="">
+            <img class="small" src="https://source.unsplash.com/random" alt="random image" title="random image from Unplash">
             <h3>PROJECT TWO</h3>
-            <a class="button" href="NOWHERE YET">Get Code</a>
+            <a class="button" href="https://github.com/dkburd?tab=repositories" target="blank">Get Code</a>
             <a class="button" href="NOWHERE YET">Live App</a>
             <p>When proejcts are added this will be a brief description of project two.</p>
             <p>When proejcts are added this will be a brief description of project two.</p>
         </div>
         <div class="card project item">
-            <img src="" alt="">
+            <img class="small" src="https://source.unsplash.com/random" alt="random image" title="random image from Unplash">
             <h3>PROJECT THREE</h3>
-            <a class="button" href="NOWHERE YET">Get Code</a>
+            <a class="button" href="https://github.com/dkburd?tab=repositories" target="blank">Get Code</a>
             <a class="button" href="NOWHERE YET">Live App</a>
             <p>When proejcts are added this will be a brief description of project three.</p>
             <p>When proejcts are added this will be a brief description of project three.</p>
@@ -129,13 +132,23 @@
 <!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script> -->
         
 
-<section> 
-    
-    <div class="group">
+<section id="contact"> 
+    <div class="card item">
+<h2>Contact</h2>
+    </div>
 
-        <div class="item card">
+    <div class="group">
+        <div class="item card form">
+            <h3>View my projects and resume online</h3>
+                <a href="https://github.com/dkburd" target="_blank">
+                    <img src="images/githubicon.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/danaburd" target="_blank">
+                    <img src="images/linkedinicon.png" alt="Linkedin"></a>
+                <a href="mailto:burd.dana@gmail.com">
+                    <img src="images/emailicon.png" alt="Gmail"></a>
+                   
             <form action="#" method="POST">
-                    <h2>Send a Message</h2>
+                    <h3>Send a Message</h3>
                 <label for="user-name">Name:</label>
                 <input id="user-name" type="text" name="name" required>
 
@@ -144,40 +157,30 @@
 
                 <label for="user-message">Message:</label>
                 <textarea id="user-message" name="message" required></textarea>
-                <button type="submit">Submit</button>
+                <button class="button" type="submit">Submit</button>
             </form>
         </div>
-        <div class="item socials card">
 
-            <h2>View my projects and resume online</h2>
 
-            <a class="mediaIcon" href="https://github.com/dkburd" target="_blank">
-                <img src="images/githubicon.png" alt="Github"></a>
-            <a class="mediaIcon" href="https://www.linkedin.com/in/danaburd" target="_blank">
-                <img src="images/linkedinicon.png" alt="Linkedin"></a>
-          <a class="icon" href="mailto:burd.dana@gmail.com">
-                           <img src="images/emailicon.png" alt="Gmail"></a> 
-        </div>
+                <div class="item map card">
+                    <h2>Located in Oakland, CA</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
+                        width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+
+
 
     </div>
     </div>
 </section>
-<section>
 
-
-    <div class="item map card">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
-            width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
-</section>
 </main>
 <footer>
     <p>burd.dana@gmail.com </p>
  </footer>
 <script src="./script.js"></script>
-<script src="https://use.fontawesome.com/145d6adf7c.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,16 @@
-const colors = ["#afc1fb", "#95efdb", "#D1F0ED", "#c3ef95", "#d4cbd0"]
+const colors = ["#ada370","#ada370","#a6cce6"]
 // using math.random multiolied by colors length to select random number for index
 const randomColor = Math.floor(Math.random() * colors.length);
 //using DOM to make the body background a random color from the arrary 
 const color = document.body.style.backgroundColor=colors[randomColor];
+// // const navColor = document.getElementById("nav").style.bacbkgroundColor=colors[randomColor];
+
+// const colors = ["#461623", "#03051e","#1E2716",]
+// // using math.random multiolied by colors length to select random number for index
+// const randomColor = Math.floor(Math.random() * colors.length);
+// //using DOM to make the body background a random color from the arrary 
+// const color = document.body.style.backgroundColor=colors[randomColor];
+// // const navColor = document.getElementById("nav").style.bacbkgroundColor=colors[randomColor];
 
 
 // const textColor = document.getElementsByClassName("box").style.color=("white");
@@ -33,5 +41,5 @@ function stickNav() {
 }
 
 
-    window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
-    formbutton("create", { action: "https://formspree.io/f/xbjppkpb" })
+    // window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+    // formbutton("create", { action: "https://formspree.io/f/xbjppkpb" })

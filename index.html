@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://use.fontawesome.com/145d6adf7c.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -17,9 +22,8 @@
     <!-- basic outline -->
     <!-- top bottom class to set text color and center for both pieces -->
 <header>  
-    <div id="#home"> 
+    <div id="home"> 
         <h1>Dana Burd Software Developer</h1>
-
     </div>
 
 <nav>
@@ -47,30 +51,43 @@
     <a href="javascript:void(0);" class="icon" onclick="showLinks()">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
-
-
 </div>
 </nav>
 </header>
     <main>
 
 <section id="about">
-<div class="card item">
+    <div class="card item aboutGroup">
+        <div class="item">
+            <h2 style="text-align: left;">Hello There!</h2>
+            <p>I'm Dana Burd, an accountant and web development student.</p>
+            <p>This is my coding portfolio. Explore this page to get to know me and my development work better.</p>
+            <p>My focus is front-end development and I am passionate about accssiable design. My skills include HTML, CSS,
+            JavaScript and WordPress.</p>
+        </div>
+            <div class="item">
+                    <img id="profile" src="images/dana-2-circle-cropped.png" alt="dana burd profile picture"
+                    title="dana burd profile picture">
+            </div>
+        </div>
+    </div>
 
-    <h2>Hello There!</h2>
-
-       <img id="profile" src="images/dana-2-circle-cropped.png" alt="dana burd profile picture" title="dana burd profile picture">
-    
-    <p>I'm Dana Burd, an accountant and web development student.</p>
-    <p> what makes u special</p>
     <br>
-    <h2>About Me</h2>
-    <p>About three years ago my sister indroduced me to Aikido, a modern Japanese martial art known as <em>the way of harmonious spirit</em> and <em>the art of peace</em>. I immediately fell in love with the art and have been practicing ever since and have applied some of  the key philosophies to my work.</p>
-    <p>Aikido teaches us to be life long learners, the imporance of begining an endevour with clear intention,how to work with our partners in a way that is mutually beneficial and to embrace that there is always something new to take from an expierence, even if it is an action we have done thousands of time.</p>
-
-    <p>Like Aikido, the world of web development offers the oppertunity to study endlessly and find new solutions to problems through teamwork and expierementation. </p>
+    <div style="padding:20px">
+        <h2>About Me</h2>
+        <p>About three years ago my sister indroduced me to Aikido, a modern Japanese martial art known as <em>the way of
+                harmonious spirit</em> and <em>the art of peace</em>. I immediately fell in love with the practice and have
+            applied some of the key philosophies to my work.</p>
+        <p>Aikido teaches us to maintain clear intentions, to work with our others in a mutually beneficial way and to be
+            life long learners - to embrace that there is always something new to take from an expierence, even if it is
+            something we have done thousands of time.</p>
+        <p>Like Aikido, the world of web development offers the oppertunity to study endlessly and find new solutions to
+            complex problems through teamwork and expierementation. And, Aikido provided me my first web design experience,
+            assisting with the updates on the <a href="http://aikidoofberkeley.com" target="blank">Aikido of Berkeley</a>
+            Wordpress website. </p>
     </div>
 </section>
+
 
 <section class="group">
 <div class="card item">
@@ -103,7 +120,8 @@
 
 
 <section id="projects">
-    <div class="card item"><h2>Work</h2>
+<br>
+    <div class="item"><h2>Work</h2>
     <p>portfolio section, I don't have any now so I will create three empty slots</p>
     <p>each will have an image, link to site and github code and a short description.</p>
     </div>
@@ -141,9 +159,10 @@
 <!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script> -->
         
 
-<section id="contact"> 
-    <div class="card item">
-<h2 style="text-align: center;">Contact</h2>
+<section> 
+<br id="contact">
+    <div  class="item">
+<h2>Contact</h2>
     <div class="contactGroup">
         <div class="item card form">
             <h3>Connect Online</h3>
@@ -172,18 +191,14 @@
        </div>
     </div>
 
-                <div class="item card">
-                    <div class="map">
-                    <h3>Located in Oakland, CA</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
-                        width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                        </div>
+      <div class="item card">
+          <div class="map">
+      <h3>Located in Oakland, CA</h3>
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
+            width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
-
-
-
              </div>
          </div>
     </div>
@@ -191,7 +206,7 @@
 
 </main>
 <footer>
-    <p>burd.dana@gmail.com </p>
+    <p style="text-align: center;">Dana Burd - 2020 - burd.dana@gmail.com </p>
  </footer>
 <script src="./script.js"></script>
 </body>

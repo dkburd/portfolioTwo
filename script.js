@@ -1,4 +1,4 @@
-const colors = ["#ada370","#ada370","#a6cce6"]
+const colors = ["#ada370","#eae1e1","#d4cbd0","#728f9c"]
 // using math.random multiolied by colors length to select random number for index
 const randomColor = Math.floor(Math.random() * colors.length);
 //using DOM to make the body background a random color from the arrary 

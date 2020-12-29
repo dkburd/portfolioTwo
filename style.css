@@ -6,14 +6,16 @@ a {
   color: #461623;
   word-spacing: 2px;
   letter-spacing: 1px;
+  font-family: "Dosis", "san-serif";
 }
 
 h1 {
   text-align: center;
+  font-size: 34px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 form label,
@@ -22,6 +24,7 @@ ul > li,
 .socialIcon {
   color: #03051e;
   margin-bottom: 10px;
+  font-family: "work sans";
 }
 
 a > img {
@@ -34,7 +37,8 @@ a > img {
   margin-top: 10px;
 }
 #profile {
-  width: 150px;
+  width: 250px;
+  margin-top: 50px;
 }
 
 .small {
@@ -49,11 +53,16 @@ a > img {
 ul > li {
   padding: 10px;
 }
+.aboutGroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
 
 .card {
   /* border: 5px solid white; */
   padding: 20px;
-  box-shadow: 1px 2px 1px 2px #777;
+  box-shadow: 5px 2px 5px 2px #461623;
   background-color: rgb(225, 225, 225, 0.3);
 }
 
@@ -83,7 +92,7 @@ ul > li {
   font-size: small;
   letter-spacing: 1px;
   border-radius: 5px;
-  border: 2px #461623 ridge;
+  border: 2px #461623;
 }
 
 /* contact and form small screen */
@@ -152,6 +161,9 @@ button:active {
     overflow: hidden;
     margin: 0px auto;
     text-align: center;
+  }
+  #profile {
+    margin-top: 0px;
   }
 }
 

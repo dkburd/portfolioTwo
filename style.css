@@ -164,6 +164,7 @@ button:active {
   }
   #profile {
     margin-top: 0px;
+    overflow: hidden;
   }
 }
 
@@ -277,4 +278,15 @@ FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON
     display: flex;
     flex-direction: column wrap;
   }
+}
+
+
+/* about @media extra small*/
+@media screen and (max-width: 400px) {
+.aboutGroup {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+}
 }

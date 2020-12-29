@@ -9,14 +9,17 @@
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://use.fontawesome.com/145d6adf7c.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- basic outline -->
     <!-- top bottom class to set text color and center for both pieces -->
 <header>  
-    <div class=""> 
+    <div id="#home"> 
         <h1>Dana Burd Software Developer</h1>
+
     </div>
 
 <nav>
@@ -44,17 +47,23 @@
     <a href="javascript:void(0);" class="icon" onclick="showLinks()">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
+
+
 </div>
 </nav>
 </header>
     <main>
-        <section id="home">
-<h2>Hello there!</h2>
-<p>I'm Dana Burd, an accountant and web development student.</p>
-<p> what makes u special</p>
-        </section>  
+
 <section id="about">
 <div class="card item">
+
+    <h2>Hello There!</h2>
+
+       <img id="profile" src="images/dana-2-circle-cropped.png" alt="dana burd profile picture" title="dana burd profile picture">
+    
+    <p>I'm Dana Burd, an accountant and web development student.</p>
+    <p> what makes u special</p>
+    <br>
     <h2>About Me</h2>
     <p>About three years ago my sister indroduced me to Aikido, a modern Japanese martial art known as <em>the way of harmonious spirit</em> and <em>the art of peace</em>. I immediately fell in love with the art and have been practicing ever since and have applied some of  the key philosophies to my work.</p>
     <p>Aikido teaches us to be life long learners, the imporance of begining an endevour with clear intention,how to work with our partners in a way that is mutually beneficial and to embrace that there is always something new to take from an expierence, even if it is an action we have done thousands of time.</p>
@@ -94,7 +103,7 @@
 
 
 <section id="projects">
-    <div class="card item"><h2>Dana's Work</h2>
+    <div class="card item"><h2>Work</h2>
     <p>portfolio section, I don't have any now so I will create three empty slots</p>
     <p>each will have an image, link to site and github code and a short description.</p>
     </div>
@@ -134,20 +143,21 @@
 
 <section id="contact"> 
     <div class="card item">
-<h2>Contact</h2>
-    </div>
-
-    <div class="group">
+<h2 style="text-align: center;">Contact</h2>
+    <div class="contactGroup">
         <div class="item card form">
-            <h3>View my projects and resume online</h3>
+            <h3>Connect Online</h3>
+            <div style='margin:0 auto; text-align: center;'>
                 <a href="https://github.com/dkburd" target="_blank">
-                    <img src="images/githubicon.png" alt="Github"></a>
+                    <i class="fab fa-github-square socialIcon"></i></a>
                 <a href="https://www.linkedin.com/in/danaburd" target="_blank">
-                    <img src="images/linkedinicon.png" alt="Linkedin"></a>
+                    <i class="fab fa-linkedin socialIcon"></i></a>
                 <a href="mailto:burd.dana@gmail.com">
-                    <img src="images/emailicon.png" alt="Gmail"></a>
-                   
-            <form action="#" method="POST">
+                    <i class="fas fa-envelope-square socialIcon"></i></a>
+            </div>
+                <br>
+            <div style='margin:0 auto; width:90%;'>
+            <form action="https://formspree.io/f/xbjppkpb" method="POST">
                     <h3>Send a Message</h3>
                 <label for="user-name">Name:</label>
                 <input id="user-name" type="text" name="name" required>
@@ -159,20 +169,23 @@
                 <textarea id="user-message" name="message" required></textarea>
                 <button class="button" type="submit">Submit</button>
             </form>
-        </div>
+       </div>
+    </div>
 
-
-                <div class="item map card">
-                    <h2>Located in Oakland, CA</h2>
+                <div class="item card">
+                    <div class="map">
+                    <h3>Located in Oakland, CA</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.17189627912!2d-122.258385864109!3d37.84173222292533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857de9bfb6278b%3A0xe4fcd9ebf109cb92!2sRockridge%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1608946767260!5m2!1sen!2sus"
                         width="480" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
+                        </div>
                 </div>
 
 
 
-    </div>
+             </div>
+         </div>
     </div>
 </section>
 

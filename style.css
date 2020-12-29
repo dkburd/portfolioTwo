@@ -8,9 +8,20 @@ a {
   letter-spacing: 1px;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
 form label,
-p {
-  color: #053343;
+p,
+ul > li,
+.socialIcon {
+  color: #03051e;
+  margin-bottom: 10px;
 }
 
 a > img {
@@ -22,10 +33,12 @@ a > img {
   margin-bottom: 70px;
   margin-top: 10px;
 }
+#profile {
+  width: 150px;
+}
 
 .small {
-  width: 120px;
-  height: 120px;
+  width: 50%;
   overflow: hidden;
 }
 .item {
@@ -39,11 +52,19 @@ ul > li {
 
 .card {
   /* border: 5px solid white; */
-  padding: 10px;
+  padding: 20px;
   box-shadow: 1px 2px 1px 2px #777;
   background-color: rgb(225, 225, 225, 0.3);
 }
 
+/* add these to replace the inline stuff in contact but need to alos adj width
+.center {
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+} */
 /* projects section small screen*/
 
 .project {
@@ -52,7 +73,7 @@ ul > li {
 }
 
 .button {
-  background-color: black;
+  background-color: #03051e;
   color: white;
   padding: 5px;
   text-align: center;
@@ -80,25 +101,25 @@ form textarea {
   height: 100px;
 }
 
-a:visited.button,
+/* a:visited.button,
 button:visited {
   color: green;
-}
+} */
 
 #nav a:hover,
 a:hover.button,
 .button:hover {
   background-color: #ddd;
-  color: black;
+  color: #03051e;
 }
 /* .nav a:hover, */
 /* .homeLink a:hover {
   background-color: #ddd;
-  color: black;
+  color: #03051e;
 } */
 a:active.button,
 button:active {
-  background-color: black;
+  background-color: #03051e;
   color: #ddd;
 }
 
@@ -119,11 +140,18 @@ button:active {
   .form {
     flex: 1;
     min-width: 300px;
+    padding: 20px;
+  }
+  .form h3,
+  .form a {
+    text-align: center;
   }
   .map {
     flex: 1;
     min-width: 300px;
     overflow: hidden;
+    margin: 0px auto;
+    text-align: center;
   }
 }
 
@@ -137,12 +165,12 @@ FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: black;
+  background-color: #03051e;
 }
 
 .nav {
   overflow: hidden;
-  background-color: black;
+  background-color: #03051e;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -168,8 +196,12 @@ FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON
   height: 20px;
 }
 
+.socialIcon {
+  font-size: 38px;
+  margin-right: 5px;
+}
 .homeLink {
-  background-color: black;
+  background-color: #03051e;
   color: white;
   width: 20px;
   height: 20px;
@@ -228,5 +260,9 @@ FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON
   .projects {
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+  .contactGroup {
+    display: flex;
+    flex-direction: column wrap;
   }
 }

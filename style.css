@@ -157,7 +157,6 @@ button:active {
   }
   .map {
     flex: 1;
-    min-width: 300px;
     overflow: hidden;
     margin: 0px auto;
     text-align: center;

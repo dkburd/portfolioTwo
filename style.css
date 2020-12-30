@@ -1,4 +1,8 @@
 /* all sizes  */
+body {
+  word-break: break-word;
+}
+
 h1,
 h2,
 h3,
@@ -38,6 +42,7 @@ a > img {
 }
 #profile {
   width: 250px;
+  max-width: 100%;
   margin-top: 50px;
 }
 
@@ -157,7 +162,6 @@ button:active {
   }
   .map {
     flex: 1;
-    min-width: 300px;
     overflow: hidden;
     margin: 0px auto;
     text-align: center;
@@ -280,13 +284,18 @@ FIX VERTICAL ALIGNMENT ON HOME LINK, WHAY SOMETIMES NAVLINK TEXT DONT SHOW UP ON
   }
 }
 
-
 /* about @media extra small*/
 @media screen and (max-width: 400px) {
-.aboutGroup {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-}
-}
+  .aboutGroup {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  ul {
+    padding: 0;
+    margin: 10px 0;
+  }
+  il > li {
+    padding: 10px 5px;
+  }
 }
